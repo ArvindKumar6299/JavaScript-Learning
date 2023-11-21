@@ -33,6 +33,7 @@
 // }
 
 
+
 // function mult(a,b){
 //     return a*b;
 // }
@@ -50,3 +51,15 @@
 
 // Memory - Stack used in (Primitive) and Heap used in (Non-Primitive)
 
+let userone = {
+    RollNo : 3445,
+    Name : "Arvind_Yadav"
+
+}
+
+let userTwo = userone;
+
+userTwo.Name = "Dipu"
+
+console.log(userone.Name);
+console.log(userTwo.Name);
