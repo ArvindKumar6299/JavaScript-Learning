@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <p id="me"></p>
+</body>
+<script>
+   const start = document.getElementById('start')
+   const stop = document.getElementById('stop')
+   const page = document.getElementById('me')
+   var SetTime;
+  
+    // ----- setInterval - bar bar call kerta reha ga jab tak  clearTimeOut aaya clearInterval function use na ho
+
+   start.addEventListener('click',()=>{
+       setTime = setInterval(() => {
+          page.innerHTML =`Your CurrentTime - ${Date.now()}`
+       }, 100);
+   })
+   stop.addEventListener('click', ()=>{
+    //   clearInterval(SetTime) -- to stop setInterval
+    clearTimeout(setTime)
+      page.innerHTML = 'Stopped'
+   })
+
+
+
+  
+
+
+   // ----- setInterval - bar bar call kerta reha ga jab tak  clearTimeOut aaya clearInterval function use na ho
+
+//    setInterval(()=>{
+//     console.log('Arvind', Date.now())
+//    },5000)
+
+//----------
+
+// const sayDate = function(str){
+//     console.log(str, Date.now());
+// }
+// const intervalId = setInterval(sayDate, 1000, "Hii")
+
+//  clearInterval(intervalId)
+
+
+</script>
+</html>

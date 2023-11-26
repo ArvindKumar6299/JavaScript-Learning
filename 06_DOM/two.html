@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: burlywood; color: blueviolet;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">Thrusday</div>
+    </div>
+    <br><br>
+    <div class="language">
+        <div class="lang">JAVA</div>
+        <div class="lang">C++</div>
+        <div class="lang">HTML</div>
+        <div class="lang">JAVASCRIPT</div>
+    </div>
+</body>
+
+<script>
+    const parentt = document.querySelector('.parent')
+    console.log(parentt);
+    console.log(parentt.children);
+    console.log(parentt.children[1].innerHTML);
+    console.log(parentt.children[2].innerHTML)
+
+    for (let i = 0; i < parentt.children.length; i++) {
+        console.log(parentt.children[i].innerHTML)
+        
+    }
+
+    const newLang = document.querySelector('.language')
+    // console.log(newLang)
+    // console.log(newLang.children.innerHTML);
+    for (let i = 0; i < newLang.children.length; i++) {
+        console.log(newLang.children[i].innerHTML)
+        
+    }
+
+    newLang.children[1].style.color = 'red'
+
+    // console.log(parent.firstElementChild)
+    // console.log(parent.lastElementChild)
+
+    const day1 = document.querySelector('.day')
+    console.log(day1)
+    console.log(day1.parentElement)
+    console.log(day1.nextElementSibling)
+
+    console.log('NODES: ', parent.childNodes)
+
+</script>
+</html>

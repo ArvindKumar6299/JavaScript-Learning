@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Code with Arvind</h1>
+    <button id="stop">Stop</button>
+    <h2 id="me"></h2>
+
+</body>
+<script>
+    const myTime = document.querySelector('#me')
+
+
+   const TimeOut = setTimeout(()=>{
+       myTime.innerHTML = 'Apana Goal ke liya Mehnat dugni chiya ! ayhi secrt hia'
+    },5000)
+    
+  
+   // ---- clearTimeout --> to stop-clear setTimeOut function 
+
+   const button = document.querySelector('#stop') 
+
+   button.addEventListener('click',()=>{
+    clearTimeout(TimeOut)
+   })
+
+//     // -------
+//     setTimeout(function(){
+//         console.log('Hitesh');
+
+//     },5000)
+//     //
+//     setTimeout(()=>{
+//         console.log('HAPPY BIRTHDAY YADAVJI')
+//     },10000)
+// //   ------------
+//     const myyTime = function(){
+//         console.log('Arvind')
+//     }
+//     setTimeout(myyTime, 10000)
+
+//    //  ---- clearTimeout --> to stop setTimeOut function 
+//    addEventListener('click',function(){
+//        clearTimeout(myyTime)
+//       console.log('STOPPED')
+//    })
+
+
+/* const myTime = document.querySelector('#me');
+
+        // Set timeout and store the ID
+        const timeoutId = setTimeout(() => {
+            myTime.innerHTML = 'Apana Goal ke liya Mehnat dugni chiya! ayhi secrt hia';
+        }, 5000);
+        
+        // Add an event listener to the stop button
+        const stopButton = document.querySelector('#stop');
+        stopButton.addEventListener('click', () => {
+            // Clear the timeout using the stored ID
+            clearTimeout(timeoutId);
+            console.log('Timeout stopped');
+        }); */
+   
+// </script>
+// </html>

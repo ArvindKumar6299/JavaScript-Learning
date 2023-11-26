@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1>Arvind - Color Changing Background</h1>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    
+</body>
+<script>
+    const start = document.querySelector('#start')
+    const stop = document.querySelector('#stop')
+   // const container = document.querySelector('.container')
+    var IntervalId;   
+
+    // Function to generate a random hex color
+    function getRandomColor(){
+        const hex = '0123456789ABCDEF'
+        let color = '#'   //colors alwas start with #
+        for(let i =0; i<6; i++){
+            color += hex[Math.floor(Math.random()*16)];
+        }
+        return color;
+    }
+    
+    // Function for start changing background color
+    
+    start.addEventListener('click',()=>{
+        IntervalId = setInterval(()=>{
+            document.body.style.backgroundColor = getRandomColor();
+        },1000)  // color will change every 1000 milliseconds(1 sec)
+    });
+    stop.addEventListener('click',()=>{
+        clearInterval(IntervalId);
+        document.body.style.backgroundColor ='initial';  // // Reset background color
+    });
+
+</script>
+</html>
