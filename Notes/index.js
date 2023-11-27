@@ -22,6 +22,8 @@
 //parseInt(document.querySelector('#height').value)
 
 //  setTimeOut() function - to set time in miliseconds to display something
+// setTimePut() -  kuch time bad output de ga jitna time baad ham kerna chatahia 
+
  // ----- setInterval() - bar bar call kerta reha ga jab tak  clearTimeOut aaya clearInterval function use na ho
 
   //   clearInterval() -- to stop setInterval
@@ -29,3 +31,24 @@
   //    clearTimeout()  --  to clear setInterval
 
   //
+
+
+  // async - wait krta hai data ana ka phir run hota hia
+
+
+  // ************  Constructor  -alwas gives new instant
+
+  // this. = it is object jiska andar value dalta hia
+
+  // ---> new  ****************
+
+  // new - this is constructor function  - to make new context  -
+  // it alwas gives new values
+  // new - alwas creates new object - then it calls constructor function-
+// then this key word inject ho jata hai function me
+
+
+// const promiseOne = new Promise()
+// const date = new Date()
+
+// this. = it is object jiska andar value dalta hia
